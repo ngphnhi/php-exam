@@ -1,4 +1,4 @@
-<?php
+<?php 
 class Item {
     public $id;
     public $item_code;
@@ -6,8 +6,11 @@ class Item {
     public $quantity;
     public $expired_date;
     public $note;
-
-    public function __construct() {
+    public function __construct()
+    {
+        
     }
 }
+
+
 ?>

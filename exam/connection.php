@@ -1,12 +1,11 @@
-<?php
+<?php 
 $host = "mysql:host=localhost:3306;dbname=v_store";
-$username = 'root';
-$password = '';
-
+$username = "root";
+$pass = "";
 try {
-    $pdo = new PDO($host, $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $conn = new PDO($host, $username, $pass);
+    $conn -> setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION );
 } catch (PDOException $ex) {
-    echo "connection failed: " . $ex->getMessage();
+    echo "connection failed: ".$ex->getMessage();
 }
 ?>
